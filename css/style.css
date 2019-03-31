@@ -1,22 +1,18 @@
-html {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     margin: 0;
     padding: 0;
-    /*background-color: #282828;*/
 }
 
 .container {
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
-    max-width: 1600px;
+    max-width: 100%;
     font-display: swap;
 }
 
-.container.head {
+header > .container {
     background-color: #262626;
     height: 100px;
 }
@@ -41,10 +37,121 @@ nav > a {
     margin-right: 50px;
     text-decoration: none;
     color: #d9d9d9;
-    font-family: 'latoblack';
+    font-family: 'latoblack', sans-serif;
     font-size: 13px;
+}
+
+nav > a:first-child {
+    color: #ff6760;
 }
 
 nav > a:last-child {
     margin: 0;
+}
+
+nav > a:hover {
+    color: #ff6760;
+}
+
+.slider > .container {
+    height: 496px;
+    background-color: #2a2a2a;
+}
+
+.slider_capture {
+    display: inline-block;
+    max-width: 70%;
+    margin-left: 15%;
+    padding: 0;
+    text-align: center;
+    color: #d9d9d9;
+}
+
+.slider_capture > h1 {
+    font-family: 'latolight', sans-serif;
+    font-size: 60px;
+}
+
+.slider_capture > h1 > strong {
+    font-family: 'latoblack', sans-serif;
+    font-size: 60px;
+}
+
+.slider_capture > p {
+    font-family: 'latolight', sans-serif;
+    font-size: 40px;
+}
+
+.slider_capture > p > em {
+    font-family: 'latolight_italic', sans-serif;
+    font-size: 40px;
+}
+
+.slider_button {
+    display: block;
+    margin: 0 auto;
+    max-width: 198px;
+    max-height: 50px;
+    box-sizing: border-box;
+    padding: 18px 0;
+    text-align: center;
+    color: white;
+    background-color: #ff6760;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'latoblack', sans-serif;
+}
+
+.slider_button:hover {
+    box-shadow: inset 0 0 20px -1px #2a2a2a;
+    transition: box-shadow 0.3s ease;
+}
+
+.services .container {
+    height: 370px;
+    background-color: #f8f8f8;
+}
+
+.services > .container > div {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-right: 3%;
+    max-width: 15%;
+    height: 370px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'latoregular';
+    color: #909090;
+}
+
+.services > .container > .service1 {
+    margin-left: 15%;
+}
+
+.services > .container > .service4 {
+    margin-right: 0;
+}
+
+.services > .container > div > p {
+    margin-top: 210px;
+}
+
+.services > .container > .service1 {
+    background: center 90px url("/img/service1.png") no-repeat;
+}
+
+.services > .container > .service2 {
+    background: center 90px url("/img/service2.png") no-repeat;
+}
+
+.services > .container > .service3 {
+    background: center 90px url("/img/service3.png") no-repeat;
+}
+
+.services > .container > .service4 {
+    background: center 90px url("/img/service4.png") no-repeat;
 }
