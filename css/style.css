@@ -1,0 +1,50 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #282828;*/
+}
+
+.container {
+    margin: auto;
+    padding: 0;
+    max-width: 1600px;
+    font-display: swap;
+}
+
+.container.head {
+    background-color: #262626;
+    height: 100px;
+}
+
+.logo {
+    display: inline-block;
+    padding: 0;
+    margin-left: 15%;
+    max-width: 110px;
+    margin-top: 35px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin-right: 15%;
+    margin-top: 40px;
+    padding: 0;
+}
+
+nav > a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #d9d9d9;
+    font-family: 'latoblack';
+    font-size: 13px;
+}
+
+nav > a:last-child {
+    margin: 0;
+}
