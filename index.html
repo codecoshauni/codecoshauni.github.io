@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="css/fontstyle.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
             <div class="logo">
                 <img src="img/logo.png">
             </div>
             <nav>
-                <a href="">HOME</a>
-                <a href="">PORTFOLIO</a>
-                <a href="">ABOUT</a>
-                <a href="">BLOG</a>
-                <a href="">CONTACT</a>
+                <a href="#home">HOME</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#about">ABOUT</a>
+                <a href="#blog">BLOG</a>
+                <a href="#contact">CONTACT</a>
             </nav>
         </div>
     </header>
-    <section class="slider">
+    <section class="slider" id="portfolio">
         <div class="container">
             <div class="slider_capture">
                 <h1>We are <strong>Webpaint</strong></h1>
                 <p><em>digital & branding</em> agency based in Jupiter and we would love to turn
                      ideas intobeautiful things.</p>
             </div>
-            <a class="slider_button" href="">SEE PORTFOLIO</a>
+            <a class="slider_button" href="#blog">SEE PORTFOLIO</a>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="about">
         <div class="container">
                 <div class="service1">
                     <p>Vestibulum id ligula porta  euismod semper. Aenean lacinia
@@ -52,29 +52,50 @@
                 </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="blog">
         <div class="container">
             <div class="portfolio_capture">
                 <h2>Our Featured Works </h2>
                 <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum.</p>
             </div>
-            <div class="portfolio_filter">
-
-            </div>
+            <input id="button1" type="radio" name="radiobutton" checked="checked">
+            <label class="label1" for="button1">ALL</label>
+            <input id="button2" type="radio" name="radiobutton">
+            <label class="label2" for="button2">GRAPHIC</label>
+            <input id="button3" type="radio" name="radiobutton">
+            <label class="label3" for="button3">ILLUSTRATION</label>
+            <input id="button4" type="radio" name="radiobutton">
+            <label class="label4" for="button4">MOTION</label>
             <div class="portfolio_imgs">
-
+                <div class="graphic"><img src="img/pic1.jpg" alt="???"></div>
+                <div class="illustration"><img src="img/pic2.jpg" alt="???"></div>
+                <div class="graphic"><img src="img/pic3.jpg" alt="???"></div>
+                <div class="illustration"><img src="img/pic4.jpg" alt="???"></div>
+                <div class="illustration"><img src="img/pic5.jpg" alt="???"></div>
+                <div class="graphic"><img src="img/pic6.jpg" alt="???"></div>
+                <div class="motion"><img src="img/pic7.jpg" alt="???"></div>
+                <div class="motion"><img src="img/pic8.jpg" alt="???"></div>
+                <div class="graphic"><img src="img/pic9.jpg" alt="???"></div>
+                <div class="motion"><img src="img/pic10.jpg" alt="???"></div>
+                <div class="motion"><img src="img/pic11.jpg" alt="???"></div>
+                <div class="motion"><img src="img/pic12.jpg" alt="???"></div>
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="contact">
-
-            </div>
-            <div class="copyright">
-
+                <h3>Get in Touch</h3>
+                <p>Vestibulum id ligula porta felis euismod semper,malesuada euismod.</p>
             </div>
         </div>
     </footer>
+    <div class="copyright">
+        <div class="container">
+            <div>
+                <p>@ 2013 Webpaint. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
