@@ -19,7 +19,6 @@ header > .container {
 
 .logo {
     display: inline-block;
-    padding: 0;
     margin-left: 15%;
     width: 107px;
     height: 33px;
@@ -32,7 +31,6 @@ nav {
     float: right;
     margin-right: 15%;
     margin-top: 40px;
-    padding: 0;
 }
 
 nav > a {
@@ -76,7 +74,7 @@ nav > a:hover {
 
 .slider_capture > h1 > strong {
     font-family: 'latoblack', sans-serif;
-    font-size: 60px;
+
 }
 
 .slider_capture > p {
@@ -86,12 +84,12 @@ nav > a:hover {
 
 .slider_capture > p > em {
     font-family: 'latolight_italic', sans-serif;
-    font-size: 40px;
 }
 
 .slider_button {
     display: block;
     margin: 0 auto;
+    margin-top: 60px;
     max-width: 198px;
     max-height: 50px;
     box-sizing: border-box;
@@ -120,7 +118,6 @@ nav > a:hover {
     box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0;
     margin-right: 3%;
     max-width: 15%;
     height: 370px;
@@ -166,8 +163,7 @@ nav > a:hover {
 
 .portfolio_capture {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-top: 60px;
     padding: 0;
     text-align: center;
