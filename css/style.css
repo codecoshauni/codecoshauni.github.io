@@ -21,8 +21,10 @@ header > .container {
     display: inline-block;
     padding: 0;
     margin-left: 15%;
-    max-width: 110px;
+    width: 107px;
+    height: 33px;
     margin-top: 35px;
+    background: center url("../img/logo.png") no-repeat;
 }
 
 nav {
@@ -141,25 +143,25 @@ nav > a:hover {
 }
 
 .services > .container > .service1 {
-    background: center 90px url("/img/service1.png") no-repeat;
+    background: center 90px url("../img/service1.png") no-repeat;
 }
 
 .services > .container > .service2 {
-    background: center 90px url("/img/service2.png") no-repeat;
+    background: center 90px url("../img/service2.png") no-repeat;
 }
 
 .services > .container > .service3 {
-    background: center 90px url("/img/service3.png") no-repeat;
+    background: center 90px url("../img/service3.png") no-repeat;
 }
 
 .services > .container > .service4 {
-    background: center 90px url("/img/service4.png") no-repeat;
+    background: center 90px url("../img/service4.png") no-repeat;
 }
 
 .portfolio > .container {
-    min-height: 1000px;
     background-color: white;
     text-align: center;
+    min-height: 1003px;
 }
 
 .portfolio_capture {
@@ -240,25 +242,28 @@ nav > a:hover {
     padding: 0;
     margin: 5px;
     position: absolute;
+    top: -9999px;
+    left: -9999px;
     opacity: 0;
+    transition: opacity 3s;
 }
 
-.portfolio #button1:checked div {
+.portfolio #button1:checked ~ .portfolio_imgs > div {
     position: static;
     opacity: 1;
 }
 
-.portfolio #button2:checked .graphic {
+.portfolio #button2:checked ~ .portfolio_imgs > .graphic {
     position: static;
     opacity: 1;
 }
 
-.portfolio #button3:checked .illustration  {
+.portfolio #button3:checked ~ .portfolio_imgs > .illustration  {
     position: static;
     opacity: 1;
 }
 
-.portfolio #button4:checked .motion  {
+.portfolio #button4:checked ~ .portfolio_imgs > .motion  {
     position: static;
     opacity: 1;
 }
@@ -269,24 +274,65 @@ footer .container {
     text-align: center;
 }
 
-footer .contact {
+footer .caption {
     color: #afafaf;
     display: inline-block;
     margin-top: 55px;
     padding: 0;
-
 }
 
-footer h3 {
+footer .caption > h3 {
+    margin-top: 0px;
     color: #e0e0e0;
     font-size: 30px;
     font-family: 'latoblack', sans-serif;
 }
 
-footer  p {
+footer .caption > p {
     font-size: 20px;
     font-family: 'latolight', sans-serif;
 }
+
+footer .phone-geo {
+    display: block;
+}
+
+footer .phone-geo a {
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #afafaf;
+    font-size: 14px;
+    font-family: 'latoregular', sans-serif;
+}
+
+footer .phone-geo .geo {
+    background: left url("../img/geo.png") no-repeat;
+}
+
+footer .phone-geo .phone {
+    background: left url("../img/phone.png") no-repeat;
+}
+
+footer .soc-links {
+    margin-top: 30px;
+    display: block;
+}
+
+footer .soc-links a {
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    background-image: url("../img/contacts_sprite.png");
+}
+
+footer .soc-links .rss { background-position:  -0 -0; }
+footer .soc-links .facebook { background-position: -30px -0; }
+footer .soc-links .twitter { background-position: -60px -0; }
+footer .soc-links .pinkshit { background-position: -90px -0; }
+footer .soc-links .pinterest { background-position: -120px -0; }
 
 .copyright .container {
     height: 82px;
@@ -294,14 +340,192 @@ footer  p {
     text-align: center;
 }
 
-.copyright .container div {
+.copyright .container  p {
     display: inline-block;
     margin-top: 30px;
     padding: 0;
-}
-
-.copyright .container  div p {
     font-size: 14px;
     font-family: 'latoregular', sans-serif;
     color: #afafaf;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        margin-left: 5%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    header > .container {
+        height: 350px;
+    }
+
+    nav {
+        margin-right: 3%;
+    }
+
+    nav > a {
+        display: block;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    nav > a:first-child {
+        margin-top: 0px;
+    }
+
+    nav > a:last-child {
+        margin-top: 40px;
+    }
+
+    .slider > .container {
+        height: 300px;
+    }
+
+    .slider_capture > h1,
+    .slider_capture > h1 > strong {
+        font-size: 35px;
+    }
+
+    .slider_capture > p,
+    .slider_capture > p > em {
+        font-size: 17px;
+    }
+
+    .slider_button {
+        margin-top: 20px;
+    }
+
+    .services .container {
+        height: 1000px;
+        text-align: center;
+    }
+
+    .services > .container > div {
+        float: none;
+        display: block;
+        max-width: 50%;
+        height: 250px;
+        font-size: 18px;
+        margin: auto;
+        margin-top: 0;
+        padding: 1px;
+    }
+
+    .services > .container > .service1 {
+        margin: auto;
+    }
+
+    .services > .container > .service4 {
+        margin: auto;
+    }
+
+    .services > .container > div > p {
+        margin-top: 100px;
+    }
+
+    .services > .container > .service1 {
+        background: center 20px url("../img/service1.png") no-repeat;
+    }
+
+    .services > .container > .service2 {
+        background: center 20px url("../img/service2.png") no-repeat;
+    }
+
+    .services > .container > .service3 {
+        background: center 20px url("../img/service3.png") no-repeat;
+    }
+
+    .services > .container > .service4 {
+        background: center 20px url("../img/service4.png") no-repeat;
+    }
+
+    .portfolio_capture {
+        font-size: 18px;
+    }
+
+    .portfolio_capture h2 {
+        font-size: 25px;
+    }
+
+    .portfolio label {
+        display: block;
+        max-width: 50%;
+        margin: auto;
+        padding: 20px 20px;
+        font-size: 14px;
+        margin-top: -15px;
+    }
+
+    .portfolio .label1 {
+        margin: auto;
+    }
+
+    .portfolio_imgs {
+        margin: auto;
+        width: 100%;
+    }
+
+    .portfolio_imgs div {
+        margin-top: 10px;
+    }
+
+    footer .container {
+        height: 380px;
+    }
+
+    footer .caption {
+        margin-top: 40px;
+    }
+
+    footer .caption > h3 {
+        font-size: 23px;
+    }
+
+    footer .caption > p {
+        font-size: 16px;
+    }
+
+    footer .phone-geo {
+        display: block;
+    }
+
+    footer .phone-geo a {
+        display: block;
+        padding: 20px 0;
+        font-size: 14px;
+        height: 50%;
+    }
+
+    footer .phone-geo .geo {
+        background: center bottom url("../img/geo.png") no-repeat;
+    }
+
+    footer .phone-geo .phone {
+        margin-top: 20px;
+        background: center bottom url("../img/phone.png") no-repeat;
+    }
+
+    footer .soc-links {
+        margin-top: 45px;
+    }
+
+    footer .soc-links a {
+        margin-right: 25px;
+    }
+
+    footer .soc-links .pinterest {
+        background-position: -120px -0;
+        margin-right: 0;
+    }
+
+    .copyright .container {
+        height: 55px;
+    }
+
+    .copyright .container  p {
+        margin-top: 20px;
+    }
 }
