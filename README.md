@@ -1,3 +1,3 @@
 # webpaint
 
-Simple one-page layout without preprocessors and libraries.
+Simple adaptive one-page layout without preprocessors and libraries.
