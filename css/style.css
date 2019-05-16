@@ -405,7 +405,7 @@ footer .soc-links .pinterest { background-position: -120px -0; }
     }
 
     .services .container {
-        height: 720px;
+        height: 760px;
         text-align: center;
     }
 
@@ -420,36 +420,31 @@ footer .soc-links .pinterest { background-position: -120px -0; }
         padding: 1px;
     }
 
-    .services > .container > .service1 {
-        margin: auto;
-    }
-
-    .services > .container > .service4 {
-        margin: auto;
-    }
-
     .services > .container > div > p {
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     .services > .container > .service1 {
-        background: center 20px url("../img/service1.png") no-repeat;
+        margin: auto;
+        background: center 50px url("../img/service1.png") no-repeat;
     }
 
     .services > .container > .service2 {
-        background: center 20px url("../img/service2.png") no-repeat;
+        background: center 50px url("../img/service2.png") no-repeat;
     }
 
     .services > .container > .service3 {
-        background: center 20px url("../img/service3.png") no-repeat;
+        background: center 50px url("../img/service3.png") no-repeat;
     }
 
     .services > .container > .service4 {
-        background: center 20px url("../img/service4.png") no-repeat;
+        margin: auto;
+        background: center 50px url("../img/service4.png") no-repeat;
     }
 
     .portfolio_capture {
         font-size: 18px;
+        margin-top: 43px;
     }
 
     .portfolio_capture h2 {
@@ -467,6 +462,7 @@ footer .soc-links .pinterest { background-position: -120px -0; }
 
     .portfolio .label1 {
         margin: auto;
+        margin-top: -25px;
     }
 
     .portfolio_imgs {
@@ -533,13 +529,14 @@ footer .soc-links .pinterest { background-position: -120px -0; }
 
 @media screen and (max-width: 620px) {
     header > .container {
-        height: 290px;
+        height: 295px;
     }
 
     nav > a {
         margin-right: 0;
         display: block;
-        font-size: 14px;
+        font-size: 12px;
+        text-align:right;
         margin-top: 40px;
     }
 
@@ -552,7 +549,11 @@ footer .soc-links .pinterest { background-position: -120px -0; }
     }
 
     .slider > .container {
-        height: 280px;
+        height: 315px;
+    }
+
+    .slider_button {
+        margin-top: 60px;
     }
 
     .portfolio > .container {
@@ -581,8 +582,12 @@ footer .soc-links .pinterest { background-position: -120px -0; }
 }
 
 @media screen and (max-width: 500px) {
+    header > .container {
+        height: 290px;
+    }
+
     nav > a {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .slider_capture > h1,
@@ -614,7 +619,7 @@ footer .soc-links .pinterest { background-position: -120px -0; }
     }
 
     .services .container {
-        height: 620px;
+        height: 650px;
     }
 
     .services > .container > div {
@@ -647,5 +652,15 @@ footer .soc-links .pinterest { background-position: -120px -0; }
 @media screen and (max-width: 285px) {
     .portfolio_imgs div {
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .slider > .container {
+        height: 310px;
+    }
+
+    footer .soc-links a {
+        margin-right: 5px;
     }
 }
