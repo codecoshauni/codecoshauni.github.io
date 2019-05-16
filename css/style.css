@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'lato', sans-serif;
 }
 
 .container {
@@ -37,7 +38,7 @@ nav > a {
     margin-right: 50px;
     text-decoration: none;
     color: #d9d9d9;
-    font-family: 'latoblack', sans-serif;
+    font-weight: 900;
     font-size: 13px;
 }
 
@@ -68,28 +69,29 @@ nav > a:hover {
 }
 
 .slider_capture > h1 {
-    font-family: 'latolight', sans-serif;
+    font-weight: 300;
     font-size: 60px;
 }
 
 .slider_capture > h1 > strong {
-    font-family: 'latoblack', sans-serif;
+    font-weight: 900;
 
 }
 
 .slider_capture > p {
-    font-family: 'latolight', sans-serif;
+    font-weight: 300;
     font-size: 40px;
 }
 
 .slider_capture > p > em {
-    font-family: 'latolight_italic', sans-serif;
+    font-weight: 300;
+
 }
 
 .slider_button {
     display: block;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 35px;
     max-width: 198px;
     max-height: 50px;
     box-sizing: border-box;
@@ -100,7 +102,7 @@ nav > a:hover {
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
-    font-family: 'latoblack', sans-serif;
+    font-weight: 900;
 }
 
 .slider_button:hover {
@@ -123,7 +125,7 @@ nav > a:hover {
     height: 370px;
     text-align: center;
     font-size: 14px;
-    font-family: 'latoregular', sans-serif;
+    font-weight: normal;
     color: #909090;
 }
 
@@ -168,12 +170,12 @@ nav > a:hover {
     padding: 0;
     text-align: center;
     color: #616161;
-    font-family: 'latolight', sans-serif;
+    font-weight: 300;
     font-size: 20px;
 }
 
 .portfolio_capture h2 {
-    font-family: 'latoblack', sans-serif;
+    font-weight: 900;
     font-size: 30px;
 }
 
@@ -192,7 +194,7 @@ nav > a:hover {
     padding: 11px 20px;
     text-align: center;
     color: white;
-    font-family: 'latoblack', sans-serif;
+    font-weight: 900;
     font-size: 12px;
     margin-left: -20px;
 }
@@ -281,12 +283,12 @@ footer .caption > h3 {
     margin-top: 0px;
     color: #e0e0e0;
     font-size: 30px;
-    font-family: 'latoblack', sans-serif;
+    font-weight: black;
 }
 
 footer .caption > p {
     font-size: 20px;
-    font-family: 'latolight', sans-serif;
+    font-weight: 300;
 }
 
 footer .phone-geo {
@@ -299,7 +301,7 @@ footer .phone-geo a {
     text-decoration: none;
     color: #afafaf;
     font-size: 14px;
-    font-family: 'latoregular', sans-serif;
+    font-weight: normal;
 }
 
 footer .phone-geo .geo {
@@ -341,7 +343,7 @@ footer .soc-links .pinterest { background-position: -120px -0; }
     margin-top: 30px;
     padding: 0;
     font-size: 14px;
-    font-family: 'latoregular', sans-serif;
+    font-weight: 400;
     color: #afafaf;
 }
 
@@ -375,27 +377,13 @@ footer .soc-links .pinterest { background-position: -120px -0; }
 }
 
 @media screen and (max-width: 850px) {
-    header > .container {
-        height: 300px;
-    }
-
     nav {
         margin-right: 5%;
     }
 
     nav > a {
-        margin-right: 0;
-        display: block;
-        font-size: 16px;
-        margin-top: 40px;
-    }
-
-    nav > a:first-child {
-        margin-top: 0px;
-    }
-
-    nav > a:last-child {
-        margin-top: 40px;
+        font-size: 12px;
+        margin-right: 27px;
     }
 
     .slider > .container {
@@ -424,7 +412,7 @@ footer .soc-links .pinterest { background-position: -120px -0; }
     .services > .container > div {
         float: none;
         display: block;
-        max-width: 50%;
+        max-width: 40%;
         height: 180px;
         font-size: 14px;
         margin: auto;
@@ -470,9 +458,9 @@ footer .soc-links .pinterest { background-position: -120px -0; }
 
     .portfolio label {
         display: block;
-        max-width: 45%;
+        max-width: 25%;
         margin: auto;
-        padding: 17px 17px;
+        padding: 13px 17px;
         font-size: 14px;
         margin-top: -15px;
     }
@@ -549,7 +537,18 @@ footer .soc-links .pinterest { background-position: -120px -0; }
     }
 
     nav > a {
+        margin-right: 0;
+        display: block;
         font-size: 14px;
+        margin-top: 40px;
+    }
+
+    nav > a:first-child {
+        margin-top: 0px;
+    }
+
+    nav > a:last-child {
+        margin-top: 40px;
     }
 
     .slider > .container {
@@ -607,9 +606,9 @@ footer .soc-links .pinterest { background-position: -120px -0; }
     }
 
     .slider_button {
-        margin-top: 45px;
+        margin-top: 40px;
         max-width: 150px;
-        max-height: 40px;
+        max-height: 45px;
         padding: 18px 0;
         font-size: 13px;
     }
@@ -638,5 +637,15 @@ footer .soc-links .pinterest { background-position: -120px -0; }
         padding: 15px 15px;
         font-size: 13px;
         margin-top: -15px;
+    }
+
+    .portfolio_imgs div {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .portfolio_imgs div {
+        width: 60%;
     }
 }
